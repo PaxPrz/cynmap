@@ -5,4 +5,5 @@ app_name="portscanner"
 urlpatterns = [
     path('', views.home, name="home"),
     path('scan/', views.scan, name="scan"),
+    path('status/<str:scanId>/', views.scanStatus, name="status"),
 ]
